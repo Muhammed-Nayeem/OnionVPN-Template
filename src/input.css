@@ -6,8 +6,8 @@
 /* theme colors and font customization */
 @theme {
   --font-display: "Rubik", "sans-serif";
-  --color-primary: "#F53838";
-  --color-heading: "#0B132A";
-  --color-subheading: "#4F5665";
-  --color-icon: "#2FAB73";
+  --color-primaryText: #F53838;
+  --color-headingText: #0B132A;
+  --color-subheadingText: #4F5665;
+  --color-iconColor: #2FAB73;
 }

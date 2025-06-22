@@ -3,13 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onion-VPN</title>
+    <title>RedOnion-VPN</title>
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="./all.min.css" />
     <!-- tailwind build css -->
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    
+  <body class="font-display overflow-x-hidden">
+    <!-- header start -->
+    <header id="header" class="bg-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+      <div class="container max-w-screen-xl mx-auto">
+        <nav id="navbar" class="flex justify-between items-center px-8 py-4">
+          <!-- logo -->
+          <a href="/" class="flex items-center space-x-1 flex-1">
+            <img class="h-[36px] w-[35px] object-cover" src="./Images/logo.png" alt="logo">
+            <span class="text-lg font-semibold text-black">RedOnion<span class="font-bold">VPN</span></span>
+          </a>
+          <!-- nav links -->
+          <ul id="nav-menu" class="hidden lg:flex space-x-8">
+            <li><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#about">About</a></li>
+            <li><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#features">Features</a></li>
+            <li><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#pricing">Pricing</a></li>
+            <li><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#testimonials">Testimonials</a></li>
+            <li><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#help">Help</a></li>
+          </ul>
+          <!-- authentication buttons -->
+          <div id="auth-btns" class="hidden lg:flex space-x-4 flex-1 justify-end">
+            <button class="text-base border transition duration-150 border-red-50 hover:border-primaryText px-6 py-1 rounded-full cursor-pointer">Sign In</button>
+            <button class="text-base bg-primaryText border border-primaryText text-white px-6 py-1 rounded-full hover:opacity-90 transition duration-150 cursor-pointer">Sign Up</button>
+          </div>
+          <!-- mobile responsive hamburger button open icon -->
+          <button id="mobile-menu" class="text-2xl cursor-pointer text-gray-700 block lg:hidden" onclick="toggleMenuHandler()">
+            <i class="fa-solid fa-bars fill-current"></i>
+          </button>
+        </nav>
+
+        <!-- responsive mobile menu -->
+        <div id="navbar-dialog" class="hidden fixed z-10 inset-0 px-8 py-4 bg-red-50 lg:hidden">
+          <div class="flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-1">
+              <img class="h-[36px] w-[35px] object-cover" src="./Images/logo.png" alt="logo">
+              <span class="text-lg font-semibold text-black">RedOnion<span class="font-bold">VPN</span></span>
+            </a>
+            <button class="text-2xl cursor-pointer text-gray-700" onclick="toggleMenuHandler()">
+              <i class="fa-solid fa-xmark fill-current"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col mt-6">
+            <li class="mb-4"><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#about">About</a></li>
+            <li class="mb-4"><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#features">Features</a></li>
+            <li class="mb-4"><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#pricing">Pricing</a></li>
+            <li class="mb-4"><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#testimonials">Testimonials</a></li>
+            <li class="mb-4"><a class="text-base text-headingText hover:text-primaryText transition duration-150" href="#help">Help</a></li>
+          </ul>
+          <div class="flex space-x-4 mt-4">
+            <button class="text-base border transition duration-150 border-red-50 hover:border-primaryText px-6 py-1 rounded-full cursor-pointer">Sign In</button>
+            <button class="text-base bg-primaryText border border-primaryText text-white px-6 py-1 rounded-full hover:opacity-90 transition duration-150 cursor-pointer">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- javascript files -->
+    <script src="../javascripts/script.js"></script>
   </body>
 </html>
