@@ -1,0 +1,21 @@
+{
+  "name": "onionvpn-landingpage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [
+    "Onion-landingPage",
+    "Tailwind-CSS",
+    "Responsive-Design"
+  ],
+  "author": "Muhammed Nayeem",
+  "license": "ISC",
+  "description": "This is a Onion VPN Landing Page Design using Tailwind CSS",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
