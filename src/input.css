@@ -6,8 +6,14 @@
 /* theme colors and font customization */
 @theme {
   --font-display: "Rubik", "sans-serif";
-  --color-primaryText: #F53838;
-  --color-headingText: #0B132A;
-  --color-subheadingText: #4F5665;
-  --color-iconColor: #2FAB73;
+  --color-primaryText: #f53838;
+  --color-headingText: #0b132a;
+  --color-subheadingText: #4f5665;
+  --color-iconColor: #2fab73;
+}
+
+@layer {
+  .main-container {
+    @apply container max-w-screen-xl mx-auto;
+  }
 }

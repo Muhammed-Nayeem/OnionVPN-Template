@@ -12,7 +12,7 @@
   <body class="font-display overflow-x-hidden">
     <!-- header start -->
     <header id="header" class="bg-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
-      <div class="container max-w-screen-xl mx-auto">
+      <div class="main-container">
         <nav id="navbar" class="flex justify-between items-center px-8 py-4">
           <!-- logo -->
           <a href="/" class="flex items-center space-x-1 flex-1">
@@ -64,6 +64,29 @@
       </div>
     </header>
     <!-- header end -->
+
+    <!-- all layouts & contents goes here -->
+    <main>
+      <!-- hero start -->
+      <section id="hero" class="top-[68px] relative py-28 bg-white">
+        <div class="main-container">
+          <div id="hero-content" class="flex flex-col md:flex-row justify-between items-center gap-8 px-8">
+            <div class="md:w-1/2">
+              <h1 class="text-4xl md:text-5xl text-headingText font-bold leading-snug">Want anything to be easy with RedOnionVPN.</h1>
+              <p class="text-subheadingText text-lg mt-6 mb-6">Provide a network for all your needs with ease and fun using RedOnionVPN discover interesting features from us.</p>
+              <button class="bg-primaryText text-white text-lg font-medium px-12 py-3 rounded-xl shadow-md shadow-red-100 mt-6 cursor-pointer hover:bg-red-600 transition duration-150">
+                Get Started
+              </button>
+            </div>
+            <div class="md:w-1/2">
+              <figure>
+                <img class="object-cover w-full h-auto" src="./Images/banner.png" alt="hero-image">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- javascript files -->
     <script src="../javascripts/script.js"></script>
