@@ -16,4 +16,7 @@
   .main-container {
     @apply container max-w-screen-xl mx-auto;
   }
+  .section-wrapper {
+    @apply top-[68px] relative py-28 bg-white;
+  }
 }

@@ -68,7 +68,7 @@
     <!-- all layouts & contents goes here -->
     <main>
       <!-- hero start -->
-      <section id="hero" class="top-[68px] relative py-28 bg-white">
+      <section id="hero" class="section-wrapper">
         <div class="main-container">
           <div id="hero-content" class="flex flex-col md:flex-row justify-between items-center gap-8 px-8">
             <div class="md:w-1/2">
@@ -82,6 +82,41 @@
               <figure>
                 <img class="object-cover w-full h-auto" src="./Images/banner.png" alt="hero-image">
               </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- statistics start -->
+      <section id="statistics" class="section-wrapper">
+        <div class="main-container">
+          <div class="flex flex-col sm:flex-row justify-evenly items-center gap-8 mx-8 px-8 py-10 rounded-xl bg-white shadow-xl backdrop-blur-xl">
+            <div class="flex items-center gap-4">
+              <figure class="w-12 h-12 border border-primaryText bg-red-100 p-4 rounded-full flex justify-center items-center">
+                <img class="min-w-8 min-h-8" src="./Images/user.png" alt="user">
+              </figure>
+              <div class="flex flex-col">
+                <h3 class="text-headingText text-2xl font-bold mb-1">90+</h3>
+                <p class="text-base text-subheadingText font-medium">Users</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <figure class="w-12 h-12 border border-primaryText bg-red-100 p-4 rounded-full flex justify-center items-center">
+                <img class="min-w-8 min-h-8" src="./Images/location.png" alt="location">
+              </figure>
+              <div class="flex flex-col">
+                <h3 class="text-headingText text-2xl font-bold mb-1">30+</h3>
+                <p class="text-base text-subheadingText font-medium">Locations</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <figure class="w-12 h-12 border border-primaryText bg-red-100 p-4 rounded-full flex justify-center items-center">
+                <img class="min-w-8 min-h-8" src="./Images/storage.png" alt="server">
+              </figure>
+              <div class="flex flex-col">
+                <h3 class="text-headingText text-2xl font-bold mb-1">50+</h3>
+                <p class="text-base text-subheadingText font-medium">Servers</p>
+              </div>
             </div>
           </div>
         </div>
