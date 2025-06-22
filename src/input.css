@@ -1,1 +1,13 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 @import "tailwindcss";
+
+/* theme colors and font customization */
+@theme {
+  --font-display: "Rubik", "sans-serif";
+  --color-primary: "#F53838";
+  --color-heading: "#0B132A";
+  --color-subheading: "#4F5665";
+  --color-icon: "#2FAB73";
+}
