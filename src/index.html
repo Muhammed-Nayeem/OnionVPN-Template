@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="./all.min.css" />
+    <!-- sweiper slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- tailwind build css -->
     <link rel="stylesheet" href="./output.css" />
   </head>
@@ -92,7 +94,7 @@
       <!-- statistics start -->
       <section id="statistics" class="section-wrapper">
         <div class="main-container">
-          <div class="flex flex-wrap sm:flex-row justify-between items-center gap-8 mx-8">
+          <div class="flex flex-wrap sm:flex-row justify-between items-center gap-12 mx-8">
             <div class="flex justify-center items-center flex-1 shadow-md gap-4 bg-white px-12 py-10 rounded-lg">
               <figure class="w-12 h-12 border border-primaryText bg-red-100 p-4 rounded-full flex justify-center items-center">
                 <img class="min-w-6 min-h-6" src="./Images/user.png" alt="user">
@@ -174,7 +176,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-headingText text-center">Choose Your Plan</h1>
             <p class="text-lg text-subheadingText text-center mt-4 md:max-w-1/2 mx-auto">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
           </article>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-4 py-4 mt-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-8 py-4 mt-12">
             <div class="flex flex-col justify-between items-center gap-4 px-4 py-16 border border-gray-300 bg-white rounded-lg hover:border-primaryText hover:-translate-y-1.5 hover:shadow-md transition duration-150">
               <figure class="mx-auto">
                   <img class="h-24 w-full" src="./Images/box.png" alt="gift-box">
@@ -285,33 +287,61 @@
             <h1 class="text-4xl md:text-5xl font-bold text-headingText text-center md:max-w-1/2 mx-auto leading-snug">Huge Global Network of Fast VPN</h1>
             <p class="text-lg text-subheadingText text-center mt-4 md:max-w-1/2 mx-auto">See RedOnionVPN everywhere to make it easier for you when you move locations.</p>
           </article>
-          <div class="mt-10 mx-4 flex justify-center items-center">
+          <div class="mt-10 mx-8 flex justify-center items-center">
             <figure>
               <img class="w-full h-auto object-cover" src="./Images/map.png" alt="map">
             </figure>
           </div>
-          <div class="py-4 flex flex-wrap sm:flex-row justify-center items-center gap-16 mx-4 mt-12">
+          <div class="py-4 flex flex-wrap sm:flex-row justify-center items-center gap-16 mx-8 mt-12">
             <figure>
-              <img class="w-28 h-auto" src="./Images/netflix.png" alt="Netflix">
+              <img class="w-32 h-auto" src="./Images/netflix.png" alt="Netflix">
             </figure>
             <figure>
-              <img class="w-28 h-auto" src="./Images/reddit.png" alt="Reddit">
+              <img class="w-32 h-auto" src="./Images/reddit.png" alt="Reddit">
             </figure>
             <figure>
-              <img class="w-28 h-auto" src="./Images/amazon.png" alt="Amazon">
+              <img class="w-32 h-auto" src="./Images/amazon.png" alt="Amazon">
             </figure>
             <figure>
-              <img class="w-28 h-auto" src="./Images/discord.png" alt="Discord">
+              <img class="w-32 h-auto" src="./Images/discord.png" alt="Discord">
             </figure>
             <figure>
-              <img class="w-28 h-auto" src="./Images/spotify.png" alt="Spotify">
+              <img class="w-32 h-auto" src="./Images/spotify.png" alt="Spotify">
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials start -->
+      <section id="testimonials" class="section-wrapper !py-12">
+        <div class="main-container">
+          <article class="mb-6 mx-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-headingText text-center md:max-w-1/2 mx-auto leading-snug">Trusted by Thousands of Happy Customer</h1>
+            <p class="text-lg text-subheadingText text-center mt-4 md:max-w-1/2 mx-auto">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+          </article>
+          <div class="mx-8 mt-12">
+            <!-- Slider main container -->
+            <div class="swiper testimonial-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="flex sm:!flex lg:!flex xl:!flex justify-end gap-4 mt-12">
+                <div class="swiper-button-prev !static !w-[40px] !h-[40px] flex items-center justify-center rounded-full border-2 border-[#F53855] text-[#F53855] hover:bg-red-200 hover:text-white transition-all after:!content-['']">
+                  <img src="./images/arrow-left.png" alt="arrow-left" class="w-6 h-6">
+                </div>
+                <div class="swiper-button-next !static !w-[40px] !h-[40px] flex items-center justify-center rounded-full bg-[#F53855] text-white hover:opacity-90 transition-all after:!content-['']">
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="w-6 h-6">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <!-- javascript files -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./javascripts/script.js"></script>
   </body>
 </html>
