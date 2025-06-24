@@ -4,6 +4,11 @@
 @import "tailwindcss";
 
 /* theme colors and font customization */
+html {
+  scroll-behavior: smooth;
+  transition: .5s ease;
+}
+
 @theme {
   --font-display: "Rubik", "sans-serif";
   --color-primaryText: #f53838;
@@ -18,5 +23,14 @@
   }
   .section-wrapper {
     @apply top-[68px] relative py-20 bg-white;
+  }
+  ::-webkit-scrollbar {
+    @apply w-2.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-["#f1f1f1"];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primaryText;
   }
 }
