@@ -4,8 +4,15 @@ const toggleMenuHandler = () => {
   mobileMenuDialog.classList.toggle("hidden");
 };
 
-// Initialize Swiper
-const swiper = new Swiper(".testimonial-swiper", {
+//Time: Year
+let currYear = document.getElementById("current-year");
+const currentYear = () => {
+  let date = new Date();
+  currYear.innerText = date.getFullYear();
+};
+
+//Initialize Swiper
+const swiper = new Swiper(".testimonial-swiper",  {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -28,7 +35,7 @@ const swiper = new Swiper(".testimonial-swiper", {
   },
 });
 
-// Testimonial Data:
+//Testimonial Data:
 const testimonials = [
   {
     name: "Viezh Robert",
@@ -88,7 +95,7 @@ const testimonials = [
   },
 ];
 
-// Generate Testimonials Slides:
+//Generate Testimonials Slides:
 const generateTestimonials = () => {
   let swiperWrapper = document.querySelector(".swiper-wrapper");
   testimonials.forEach((testimonial) => {
@@ -118,4 +125,5 @@ const generateTestimonials = () => {
   });
 };
 
+currentYear();
 document.addEventListener("DOMContentLoaded", generateTestimonials);
