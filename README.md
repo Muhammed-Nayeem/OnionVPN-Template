@@ -1,6 +1,4 @@
 # RedOnionVPN
-
-## Project Overview :
 This project is a simple landing page for a VPN service. It is built with using Tailwind CSS and AOS library for animations.
 
 ## Technologies Used :
