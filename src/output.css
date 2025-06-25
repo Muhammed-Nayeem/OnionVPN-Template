@@ -851,6 +851,8 @@ html {
   .section-wrapper {
     position: relative;
     top: 68px;
+    overflow-x: hidden;
+    overflow-y: clip;
     background-color: var(--color-white);
     padding-block: calc(var(--spacing) * 20);
   }

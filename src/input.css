@@ -22,7 +22,7 @@ html {
     @apply container max-w-screen-xl mx-auto;
   }
   .section-wrapper {
-    @apply top-[68px] relative py-20 bg-white;
+    @apply top-[68px] relative py-20 bg-white overflow-x-hidden overflow-y-clip;
   }
   ::-webkit-scrollbar {
     @apply w-2.5;

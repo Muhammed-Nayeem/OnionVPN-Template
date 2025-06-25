@@ -1,5 +1,5 @@
 //aos animation initialization:
-// AOS.init();
+AOS.init();
 
 //Mobile Menu Toggler:
 const mobileMenuDialog = document.getElementById("navbar-dialog");
