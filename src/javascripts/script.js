@@ -1,5 +1,5 @@
 //aos animation initialization:
-AOS.init();
+// AOS.init();
 
 //Mobile Menu Toggler:
 const mobileMenuDialog = document.getElementById("navbar-dialog");
@@ -13,6 +13,7 @@ const currentYear = () => {
   let date = new Date();
   currYear.innerText = date.getFullYear();
 };
+currentYear();
 
 //Initialize Swiper
 const swiper = new Swiper(".testimonial-swiper",  {
@@ -128,5 +129,4 @@ const generateTestimonials = () => {
   });
 };
 
-currentYear();
 document.addEventListener("DOMContentLoaded", generateTestimonials);
